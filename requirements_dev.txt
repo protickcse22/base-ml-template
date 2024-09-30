@@ -5,6 +5,8 @@ seaborn
 flask
 mlflow
 dvc
+xgboost
+ipykernel
 
 # dev requirements -
 
