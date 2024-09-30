@@ -25,8 +25,8 @@ class ModelEvaluation:
     def initiate_model_evaluation(self, train_array, test_array):
         try:
             X_test, y_test = (test_array[:, :-1], test_array[:, -1])
-
-            model_path = os.path.join("artifacts", "model.pkl")
+            project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+            model_path = os.path.join(project_root, "artifacts", "model.pkl")
             model = load_object(model_path)
 
             # mlflow.set_registry_uri("")
